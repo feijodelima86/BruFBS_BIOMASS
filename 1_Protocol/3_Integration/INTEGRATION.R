@@ -26,5 +26,5 @@ INTEGRATED<-All%>%reduce(full_join, by = c("PROJECT","SAMPLE","SITE","DATE","SUB
 INTEGRATED$DATE<-as.Date(INTEGRATED$DATE, origin = "1899-12-30")
 
 
-write.csv(INTEGRATED,"2_Incremental/3_Integration/INTEGRATED.csv")
+write.csv(INTEGRATED,"2_Incremental/3_Integration/INTEGRATED_CURRENT.csv")
   
